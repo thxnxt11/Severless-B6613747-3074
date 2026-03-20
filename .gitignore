@@ -1,0 +1,10 @@
+.env
+
+# Markdown and PowerShell files
+*.md
+*.ps1
+*.ps
+
+# Password files
+*-password.txt
+jenkins-auth-password.txt

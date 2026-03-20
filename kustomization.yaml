@@ -1,0 +1,28 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - namespace/namespace.yaml
+  - nginx/deployment/deploy.yaml
+  - nginx/service/service.yaml
+  - nginx/ingress/ingress.yaml
+  - jenkins/deployment/deploy.yaml
+  - jenkins/service/service.yaml
+  - jenkins/ingress/ingress.yaml
+  - jenkins/pv/pv.yaml
+  - jenkins/pvc/pvc.yaml
+  - grafana/deployment/deploy.yaml
+  - grafana/service/service.yaml
+  - grafana/ingress/ingress.yaml
+  - grafana/pv/pv.yaml
+  - grafana/pvc/pvc.yaml
+generatorOptions:
+  disableNameSuffixHash: true
+secretGenerator:
+  - name: jenkins-secret
+    namespace: ci-cd
+    envs:
+      - .env
+  - name: grafana-secret
+    namespace: monitoring
+    envs:
+      - .env
