@@ -21,17 +21,17 @@
 
 ### Nginx
 
-![Nginx Architecture](pic/nginx.png)
+![Nginx Architecture](Picture/nginx.png)
 Nginx ทำหน้าที่เป็น Reverse Proxy และ Load Balancer สำหรับรับเข้าจากภายนอก
 
 ### Jenkins
 
-![Jenkins CI/CD](pic/jenkins.png)
+![Jenkins CI/CD](Picture/jenkins.png)
 Jenkins ใช้สำหรับ Continuous Integration / Continuous Delivery (CI/CD) pipelines
 
 ### Grafana
 
-![Grafana Monitoring](pic/grafana.png)
+![Grafana Monitoring](Picture/grafana.png)
 Grafana ใช้สำหรับการสรุป และแสดงข้อมูลการตรวจสอบระบบ (Monitoring)
 
 ---
