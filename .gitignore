@@ -1,7 +1,8 @@
 .env
 
 # Markdown and PowerShell files
-*.md
+ACCESS_GUIDE.md
+DEPLOYMENT_SUMMARY.md
 *.ps1
 *.ps
 
